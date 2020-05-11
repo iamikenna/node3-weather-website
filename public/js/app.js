@@ -1,5 +1,3 @@
-console.log("client side javascript file is loaded")
-
 
 // this works in the client side only and uses the then to give a response to the client 
 
