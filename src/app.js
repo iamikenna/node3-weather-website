@@ -15,7 +15,7 @@ const ik = "Index family"
 
 // Calling the express function after importing the module from npm
 const app = express()
-
+const port = process.env.PORT || 3000
 // Getting the path of the html content and saving it in a variable name, calling it later with app.use()
 // Define paths for express configuration
 const public_static = path.join(__dirname, "../public")
@@ -192,6 +192,6 @@ app.get('/products', (req, res) => {
 // app.com/weather
 
 // setting up a server on port 3000
-app.listen(3000, () => {
-    console.log("Server is up on port 3000.")
+app.listen(port, () => {
+    console.log("Server is up on port 3000."+ port)
 })
